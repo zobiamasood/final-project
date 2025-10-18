@@ -87,17 +87,12 @@ p{
     font-size: 14px;
 }
 
-
-/* ================= RESPONSIVE MEDIA QUERIES ================= */
-
-/* 💻 Laptops (992px – 1199px) */
 @media screen and (max-width: 1199px) and (min-width: 992px) {
   h1 { font-size: 26px; }
   h2 { font-size: 18px; }
   p, .description { font-size: 15px; }
 }
 
-/* 📱 Tablets (768px – 991px) */
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .main-container {
     width: 85%;
@@ -119,7 +114,6 @@ p{
   footer { font-size: 14px; }
 }
 
-/* 📲 Mobiles (481px – 767px) */
 @media screen and (max-width: 767px) and (min-width: 481px) {
   body {
     background-color: bisque;
@@ -133,7 +127,7 @@ p{
   h2 { font-size: 17px; }
   label { font-size: 14px; padding: 8px; }
   button {
-    width: auto;              /* ❌ full width hata di */
+    width: auto;            
     display: inline-block;
     font-size: 14px;
     padding: 8px 14px;
@@ -145,7 +139,7 @@ p{
   footer { font-size: 13px; }
 }
 
-/* 📞 Small Mobiles (≤ 480px) */
+
 @media screen and (max-width: 480px) {
   body {
     background-color: bisque;
@@ -161,7 +155,7 @@ p{
   h2 { font-size: 16px; }
   label { font-size: 13px; padding: 8px; }
   button {
-    width: auto;              /* natural size */
+    width: auto;    
     display: inline-block;
     font-size: 14px;
     padding: 8px 14px;
