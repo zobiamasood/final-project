@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quiz app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="main-container">
+    <!--home page !-->
+    <div id="home">
+      <h1>Web Development Quiz App</h1>
+      <p class="description">This Quiz App help the users test their knowledge of HTML ,CSS & JavaScript</p>
+      <p><b> <strong>Total Questions:</strong></b> 20</p>
+      <p><b> <strong>Each Question Carries:</strong></b>1 Mark </p>
+      <button onclick="startQuiz()" id="startQuiz"><i class="fa-solid fa-play"></i> Start Quiz</button>
+    </div>
+    <!--start button-->
+    <div id="quiz-box" style="display: none;">
+      <h2 id="questions">first question</h2>
+      <div class="radio">
+      <label><input type="radio" name="option" id="option1"> <span id="opt1_Text"></span></label>
+      <label><input type="radio" name="option" id="option2"> <span id="opt2_Text"></span></label>
+      <label><input type="radio" name="option" id="option3"> <span id="opt3_Text"></span></label>
+      <label><input type="radio" name="option" id="option4"> <span id="opt4_Text"></span></label>
+      <div>
+      <button onclick="nextHandler()"><i class="fa-solid fa-arrow-right"></i>  Next </button>
+      </div>
+    </div>
+    </div>
+    <!--result-->
+    <div id="showResult" style="display: none;">
+    <h2>Quiz Completed !</h2>
+    <p id="score"></p>
+    <p id="remarks"></p>
+    <button onclick="goHomepage()"><i class="fa-solid fa-arrow-left"></i> Go to Homepage</button>
+    <button onclick="restartHandler()">Restart Quiz  <i class="fa-solid fa-repeat"></i></button>
+    </div>
+    <footer>Developed by <b><i><u>ZOBIA MASOOD</u></i></b> - Final Project</footer>
+    
+  </div>
+  <script src="apps.js"></script>
+</body>
+</html>
